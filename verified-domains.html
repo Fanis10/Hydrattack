@@ -22,7 +22,7 @@
                     <img src="img/logo.svg" alt="">
                 </a>
                 <div class="header__check">
-                    <input type="checkbox">
+                    <input class="header__check-input" type="checkbox">
                     <label></label>
                 </div>
                 <ul class="header__list">
@@ -120,11 +120,8 @@
 				<div class="container">
 					<div class="domains-main__inner">
 						<div class="domains-main__flex">
-							<div class="domains-main__text">
-								<p>
-									To check, enter the domain name or
-									<span>paste from buffer</span>
-								</p>
+							<div class="domains-main__input">
+								<input type="text" placeholder="To check, enter the domain name or paste from buffer">
 							</div>
 							<div class="domains-main__select">
 								<div class="domains-main__select-show">
@@ -191,11 +188,7 @@
 
 										</div>
 										<div class="calendar">
-											<input type='text'
-												   class="datepicker-here"
-												   data-range="true"
-												   data-multiple-dates-separator=" - "
-												   data-language="en"/>
+											<input type='text' class="datepicker-here" />
 											<div class="calendar__text">
 												<span>From</span>
 												<span>To</span>
@@ -210,7 +203,7 @@
 									</div>
 								</div>
 							</div>
-							<button class="domains-main__btn btn-blue">
+							<button class="domains-main__btn btn-blue" data-modal="contactModal">
 								<span>Start</span>
 							</button>
 						</div>
@@ -2447,6 +2440,45 @@
         </div>
     </div>
 </footer>
+
+
+		<div class="modal" id="contactModal">
+			<div class="modal__dialog">
+				<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+					<svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6647 1.34416L10.3225 10.5267L0.975602 18.0081L0.606659 17.6648L0.286133 17.2669L7.56394 7.83277L16.8725 0.654416L17.3924 0.879259L17.6647 1.34416Z" fill="white"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0783 17.9569L7.60733 10.5477L0.338089 1.19058L0.606915 0.878655L0.925915 0.603027L10.4521 7.96149L17.7178 17.318L17.3925 17.6644L17.0783 17.9569Z" fill="white"/>
+					</svg>
+				</button>
+				<div class="modal__content">
+					<div class="modal__title">Checking the web application at</div>
+					<div class="modal__subtitle">hydrattack.com </div>
+					<div class="modal__btns">
+						<button class="modal__btn btn-blue">
+							<span>Continue</span>
+						</button>
+						<div class="modal__cancel">Cancel</div>
+					</div>
+					<div class="domains-main__info">
+						<div class="domains-main__info-item item">
+							<div class="dashboard-card__active-show show">
+								<span>!</span>
+							</div>
+							<div class="dashboard-card__active-hide hide">
+								<div class="dashboard-card__active-wrap">
+									To add an active workflow check, you need to <a href="">confirm ownership of the web application</a>
+								</div>
+							</div>
+						</div>
+						<div class="domains-main__info-text">
+							By default, analysis is performed only on the passive stream. To add an active stream check, you need to
+							<span>confirm ownership of the web application</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 
 	</div>
 
