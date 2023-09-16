@@ -128,9 +128,9 @@
 							</div>
 							<div class="tabs-head">
 								<div data-tab-path="1" class="tab">Credentials</div>
-								<div data-tab-path="2" class="tab tab--active">Password change</div>
+								<div data-tab-path="2" class="tab">Password change</div>
 								<div data-tab-path="3" class="tab">Notifications</div>
-								<div data-tab-path="4" class="tab">Users</div>
+								<div data-tab-path="4" class="tab tab--active">Users</div>
 								<div data-tab-path="5" class="tab">API</div>
 								<div data-tab-path="6" class="tab">Configuring the report</div>
 								<div data-tab-path="7" class="tab">Sessions</div>
@@ -197,7 +197,7 @@
 									</div>
 								</form>
 							</div>
-							<div data-content-path="2" class="tabs__content tabs__content--active">
+							<div data-content-path="2" class="tabs__content">
 								<h2 class="account__title text20">Password change</h2>
 								<form class="account__form">
 									<div class="account__form-grid">
@@ -209,6 +209,17 @@
 										</fieldset>
 										<fieldset class="account__form-group">
 											<input type="password" placeholder="Repeat the password">
+										</fieldset>
+										<fieldset class="account__form-group">
+											<span class="input-title">Change password via</span>
+											<div class="account__select custom_select">
+												<select>
+													<option value="Month">Month</option>
+													<option value="3 months">3 months</option>
+													<option value=Year">Year</option>
+													<option value="Never">Never</option>
+												</select>
+											</div>
 										</fieldset>
 									</div>
 									<div class="account__form-bottom">
@@ -245,8 +256,121 @@
 									</div>
 								</form>
 							</div>
-							<div data-content-path="4" class="tabs__content">
-
+							<div data-content-path="4" class="tabs__content tabs__content--active">
+								<h2 class="account__title text20">Users</h2>
+								<div class="user">
+									<div class="account__text">Invite employees to work on one or all of your projects. Specify the employee's email address and configure access rights for the selected sites.</div>
+									<div class="user-top">
+										<form class="user-form account__form">
+											<div class="user-form__left">
+												<fieldset class="account__form-group input-group">
+													<span class="input-title">Send an invitation by e-mail</span>
+													<input type="text" placeholder="Text">
+												</fieldset>
+												<fieldset class="account__form-group">
+													<span class="input-title">Role</span>
+													<div class="account__select custom_select">
+														<select>
+															<option value="Manager">Manager</option>
+															<option value="3 months">3 months</option>
+															<option value=Year">Year</option>
+															<option value="Never">Never</option>
+														</select>
+													</div>
+												</fieldset>
+											</div>
+											<div class="user-form__right">
+												<fieldset class="account__form-group">
+													<span class="input-title">Permission</span>
+													<div class="account__select custom_select">
+														<select>
+															<option value="writing, reading, execution">writing, reading, execution</option>
+															<option value="3 months">3 months</option>
+															<option value=Year">Year</option>
+															<option value="Never">Never</option>
+														</select>
+													</div>
+												</fieldset>
+												<button class="account__form-btn2 btn-blue">
+													<span>Add</span>
+												</button>
+											</div>
+										</form>
+										<form class="user-form account__form">
+											<div class="user-form__left">
+												<fieldset class="account__form-group input-group">
+													<span class="input-title">Send an invitation by e-mail</span>
+													<input type="text" placeholder="Text">
+												</fieldset>
+												<fieldset class="account__form-group">
+													<span class="input-title">Role</span>
+													<div class="account__select custom_select">
+														<select>
+															<option value="Manager">Manager</option>
+															<option value="3 months">3 months</option>
+															<option value=Year">Year</option>
+															<option value="Never">Never</option>
+														</select>
+													</div>
+												</fieldset>
+											</div>
+											<div class="user-form__right">
+												<fieldset class="account__form-group">
+													<span class="input-title">Permission</span>
+													<div class="account__select custom_select">
+														<select>
+															<option value="writing, reading, execution">writing, reading, execution</option>
+															<option value="3 months">3 months</option>
+															<option value=Year">Year</option>
+															<option value="Never">Never</option>
+														</select>
+													</div>
+												</fieldset>
+												<button class="account__form-btn2 btn-blue">
+													<span>Add</span>
+												</button>
+											</div>
+										</form>
+									</div>
+									<div class="user-bottom">
+										<div class="user-item">
+											<div class="user-item__desc">
+												<div class="user-item__title">Manager</div>
+												<div class="user-item__text">
+													<a class="user-item__link" href="">d.ivanov@mail.com</a>
+													<p class="user-item__info">writing, reading, execution</p>
+												</div>
+											</div>
+											<button class="user-item__btn">
+												<span>Delete</span>
+											</button>
+										</div>
+										<div class="user-item">
+											<div class="user-item__desc">
+												<div class="user-item__title">Manager</div>
+												<div class="user-item__text">
+													<a class="user-item__link" href="">d.ivanov@mail.com</a>
+													<p class="user-item__info">writing, reading, execution</p>
+												</div>
+											</div>
+											<button class="user-item__btn">
+												<span>Delete</span>
+											</button>
+										</div>
+										<div class="user-item">
+											<div class="user-item__desc">
+												<div class="user-item__title">Manager</div>
+												<div class="user-item__text">
+													<a class="user-item__link" href="">d.ivanov@mail.com</a>
+													<p class="user-item__info">writing, reading, execution</p>
+												</div>
+											</div>
+											<button class="user-item__btn">
+												<span>Delete</span>
+											</button>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div data-content-path="5" class="tabs__content">
 								<h2 class="account__title text20">API</h2>
