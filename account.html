@@ -18,6 +18,10 @@
     <div class="container">
         <div class="header__inner">
             <div class="header__left">
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                </div>
                 <a href="" class="header__logo">
                     <img src="img/logo.svg" alt="">
                 </a>
@@ -128,9 +132,9 @@
 							</div>
 							<div class="tabs-head">
 								<div data-tab-path="1" class="tab">Credentials</div>
-								<div data-tab-path="2" class="tab">Password change</div>
+								<div data-tab-path="2" class="tab tab--active">Password change</div>
 								<div data-tab-path="3" class="tab">Notifications</div>
-								<div data-tab-path="4" class="tab tab--active">Users</div>
+								<div data-tab-path="4" class="tab">Users</div>
 								<div data-tab-path="5" class="tab">API</div>
 								<div data-tab-path="6" class="tab">Configuring the report</div>
 								<div data-tab-path="7" class="tab">Sessions</div>
@@ -197,7 +201,7 @@
 									</div>
 								</form>
 							</div>
-							<div data-content-path="2" class="tabs__content">
+							<div data-content-path="2" class="tabs__content tabs__content--active">
 								<h2 class="account__title text20">Password change</h2>
 								<form class="account__form">
 									<div class="account__form-grid">
@@ -256,7 +260,7 @@
 									</div>
 								</form>
 							</div>
-							<div data-content-path="4" class="tabs__content tabs__content--active">
+							<div data-content-path="4" class="tabs__content">
 								<h2 class="account__title text20">Users</h2>
 								<div class="user">
 									<div class="account__text">Invite employees to work on one or all of your projects. Specify the employee's email address and configure access rights for the selected sites.</div>
@@ -662,7 +666,7 @@
 										<div class="sessions__item">
 											<div class="sessions__item-desc">
 												<div class="sessions__item-text">
-													<p>IP address: 78.110.10.13 ( 🇸🇦 Saudi Arabia)</p>
+													<p>IP address: 78.110.10.13 ( <img src="img/sa.svg" alt=""> Saudi Arabia)</p>
 													<p>User agent: Firefox on OS X 10.15 (desktop)</p>
 													<p>Signed in: May 8th, 2023 at 10:30:00 pm (13 days ago)</p>
 													<p>Last used at: This session</p>
@@ -677,11 +681,12 @@
 										</div>
 										<div class="sessions__item">
 											<div class="sessions__item-desc">
-												<div class="sessions__item-text">
-													<p>IP address: 78.110.10.13 ( 🇸🇦 Saudi Arabia)</p>
+												<div class="sessions__item-text grey-text">
+													<p>IP address: 78.110.10.13 ( <img src="img/sa.svg" alt=""> Saudi Arabia)</p>
 													<p>User agent: Firefox on OS X 10.15 (desktop)</p>
 													<p>Signed in: May 8th, 2023 at 10:30:00 pm (13 days ago)</p>
 													<p>Last used at: This session</p>
+													<p class="white">Deactivated at: May 7th, 2023 at 11:31:55 pm (14 days ago)</p>
 												</div>
 												<div class="sessions__item-account">
 													Account: <a href="">info@hydrattack.com</a>

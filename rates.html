@@ -18,6 +18,10 @@
     <div class="container">
         <div class="header__inner">
             <div class="header__left">
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                </div>
                 <a href="" class="header__logo">
                     <img src="img/logo.svg" alt="">
                 </a>
@@ -127,14 +131,14 @@
 								<span></span>
 							</div>
 							<div class="tabs-head">
-								<div data-tab-path="1" class="tab tab--active">My tariff</div>
-								<div data-tab-path="2" class="tab">Payment method</div>
+								<div data-tab-path="1" class="tab">My tariff</div>
+								<div data-tab-path="2" class="tab tab--active">Payment method</div>
 								<div data-tab-path="3" class="tab">Payment history</div>
 								<div data-tab-path="4" class="tab">Sessions</div>
 							</div>
 						</div>
 						<div class="content-right">
-							<div data-content-path="1" class="tabs__content tabs__content--active">
+							<div data-content-path="1" class="tabs__content">
 								<div class="rates__subtitle text20">Tariffs and payment</div>
 								<div class="tariff2">
 									<div class="tariff2__left">
@@ -1002,7 +1006,7 @@
 									</table>
 								</div>
 							</div>
-							<div data-content-path="2" class="tabs__content">
+							<div data-content-path="2" class="tabs__content tabs__content--active">
 								<div class="payment">
 									<div class="rates__subtitle text20">Payment method</div>
 									<div class="payment__items">
@@ -1011,7 +1015,9 @@
 												<div class="payment__item-title">Payment method "Bank transfer"</div>
 												<div class="payment__item-checkboxes">
 													<div class="payment__item-checkbox">
-														<input class="payment__item-check" type="radio" name="payment">
+														<input type="radio"
+															   class="payment__item-check"
+															   name="radio"/>
 														<label></label>
 														<div class="payment__checkbox-title">
 															<span>On</span>
@@ -1020,7 +1026,9 @@
 														<div class="payment__checkbox-text">Auto-renewal</div>
 													</div>
 													<div class="payment__item-checkbox">
-														<input class="payment__item-check" type="radio" name="payment">
+														<input type="radio"
+															   class="payment__item-check"
+															   name="radio"/>
 														<label></label>
 														<div class="payment__checkbox-title">
 															<span>On</span>
@@ -1040,8 +1048,9 @@
 												<div class="payment__item-title">Payment method "Bank transfer"</div>
 												<div class="payment__item-checkboxes">
 													<div class="payment__item-checkbox">
-														<input class="payment__item-check" type="radio" name="payment2">
-														<label></label>
+														<input type="radio"
+															   class="payment__item-check"
+															   name="radio2"/>													<label></label>
 														<div class="payment__checkbox-title">
 															<span>On</span>
 															<span>Off</span>
@@ -1049,8 +1058,9 @@
 														<div class="payment__checkbox-text">Auto-renewal</div>
 													</div>
 													<div class="payment__item-checkbox">
-														<input class="payment__item-check" type="radio" name="payment2">
-														<label></label>
+														<input type="radio"
+															   class="payment__item-check"
+															   name="radio2"/>												<label></label>
 														<div class="payment__checkbox-title">
 															<span>On</span>
 															<span>Off</span>
@@ -1070,7 +1080,7 @@
 							<div data-content-path="3" class="tabs__content">
 								<div class="payment-history">
 									<div class="rates__subtitle text20">Payment history</div>
-									<table class="concepts-info__table">
+									<table>
 										<thead>
 										<tr>
 											<th>
@@ -1129,7 +1139,7 @@
 										</tr>
 										</tbody>
 									</table>
-									<table class="concepts-info__table table-nodata">
+									<table class="table-nodata">
 										<thead>
 										<tr>
 											<th>
