@@ -122,12 +122,12 @@
 			<div class="wrap-flex">
 				<div class="main-sidebar">
 					<div class="main-sidebar__bg2"></div>
+					<div class="main-sidebar__bg">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 					<div class="main-sidebar__wrap">
-						<div class="main-sidebar__bg">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
 						<div class="main-sidebar__content">
 							<div class="main-sidebar__domain">
 								<div class="main-sidebar__domain-title">domain name</div>
@@ -412,69 +412,72 @@
 								</div>
 							</div>
 							<div class="sidebar-tariff">
-								<div class="change2 item">
-									<div class="change-show show">
-										<span>Bronze</span>
-										<i>
-											<svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M13.4738 7.28632V12.7668C13.4738 13.2586 13.075 13.6573 12.5832 13.6573H1.74601C1.25418 13.6573 0.855469 13.2586 0.855469 12.7668V1.92961C0.855469 1.43777 1.25418 1.03906 1.74601 1.03906H7.16461" stroke="#616161" stroke-width="0.890544"/>
-												<path d="M9.63233 3.49876L11.2046 5.06639L6.09834 10.4414L4.4471 10.5287L4.52609 8.87375L9.63233 3.49876Z" fill="#616161"/>
-												<path d="M11.0556 2.00143L12.6135 3.58421L11.6405 4.55907L10.0827 2.97629L11.0556 2.00143Z" fill="#616161"/>
-											</svg>
-										</i>
-									</div>
-									<div class="change-hide hide">
-										<div class="change-wrap">
-											<div class="tariff">
-												<div class="tariff__title">Tariff</div>
-												<div class="tariff__checkboxes">
-													<div class="tariff__checkbox-item">
-														<div class="tariff__checkbox">
-															<input type="radio" name="tariff">
-															<label></label>
+								<div class="sidebar-tariff__item">
+									<div class="sidebar-tariff__item-title">Tariff</div>
+									<div class="change2 item">
+										<div class="change-show show">
+											<span>Bronze</span>
+											<i>
+												<svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M13.4738 7.28632V12.7668C13.4738 13.2586 13.075 13.6573 12.5832 13.6573H1.74601C1.25418 13.6573 0.855469 13.2586 0.855469 12.7668V1.92961C0.855469 1.43777 1.25418 1.03906 1.74601 1.03906H7.16461" stroke="#616161" stroke-width="0.890544"/>
+													<path d="M9.63233 3.49876L11.2046 5.06639L6.09834 10.4414L4.4471 10.5287L4.52609 8.87375L9.63233 3.49876Z" fill="#616161"/>
+													<path d="M11.0556 2.00143L12.6135 3.58421L11.6405 4.55907L10.0827 2.97629L11.0556 2.00143Z" fill="#616161"/>
+												</svg>
+											</i>
+										</div>
+										<div class="change-hide hide">
+											<div class="change-wrap">
+												<div class="tariff">
+													<div class="tariff__title">Tariff</div>
+													<div class="tariff__checkboxes">
+														<div class="tariff__checkbox-item">
+															<div class="tariff__checkbox">
+																<input type="radio" name="tariff">
+																<label></label>
+															</div>
+															<div class="tariff__checkbox-text">
+																<span>Bronze</span>
+																<span>Free</span>
+															</div>
 														</div>
-														<div class="tariff__checkbox-text">
-															<span>Bronze</span>
-															<span>Free</span>
+														<div class="tariff__checkbox-item">
+															<div class="tariff__checkbox">
+																<input type="radio" name="tariff">
+																<label></label>
+															</div>
+															<div class="tariff__checkbox-text">
+																<span>Silver</span>
+																<span>$1.000 / scan</span>
+															</div>
 														</div>
-													</div>
-													<div class="tariff__checkbox-item">
-														<div class="tariff__checkbox">
-															<input type="radio" name="tariff">
-															<label></label>
+														<div class="tariff__checkbox-item">
+															<div class="tariff__checkbox">
+																<input type="radio" name="tariff">
+																<label></label>
+															</div>
+															<div class="tariff__checkbox-text">
+																<span>Gold</span>
+																<span>$5.000 / scan</span>
+															</div>
 														</div>
-														<div class="tariff__checkbox-text">
-															<span>Silver</span>
-															<span>$1.000 / scan</span>
-														</div>
-													</div>
-													<div class="tariff__checkbox-item">
-														<div class="tariff__checkbox">
-															<input type="radio" name="tariff">
-															<label></label>
-														</div>
-														<div class="tariff__checkbox-text">
-															<span>Gold</span>
-															<span>$5.000 / scan</span>
-														</div>
-													</div>
-													<div class="tariff__checkbox-item">
-														<div class="tariff__checkbox">
-															<input type="radio" name="tariff">
-															<label></label>
-														</div>
-														<div class="tariff__checkbox-text">
-															<span>Platinum</span>
-															<span>$10.000 / month</span>
+														<div class="tariff__checkbox-item">
+															<div class="tariff__checkbox">
+																<input type="radio" name="tariff">
+																<label></label>
+															</div>
+															<div class="tariff__checkbox-text">
+																<span>Platinum</span>
+																<span>$10.000 / month</span>
+															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="domains-main__select-btns">
-												<button class="domains-main__select-btn btn-blue">
-													<span>Ок</span>
-												</button>
-												<div class="domains-main__select-cancel">Cancel</div>
+												<div class="domains-main__select-btns">
+													<button class="domains-main__select-btn btn-blue">
+														<span>Ок</span>
+													</button>
+													<div class="domains-main__select-cancel">Cancel</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -541,6 +544,28 @@
 						<div class="container">
 							<div class="general__inner">
 								<h1 class="main__title text30">General report</h1>
+								<div style="margin-top: 30px" class="main__flex">
+									<div class="main__left">
+										<div class="radar">
+											<img src="img/radar.webp" alt="">
+										</div>
+										<div class="dashboard-card__active item">
+											<div class="dashboard-card__active-show show">
+												<span>!</span>
+											</div>
+											<div class="dashboard-card__active-hide hide">
+												<div class="dashboard-card__active-wrap">
+													To add an active workflow check, you need to <a href="">confirm ownership of the web application</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="main__right">
+										<div class="map">
+											<img src="img/map.webp" alt="">
+										</div>
+									</div>
+								</div>
 								<div class="main-cards">
 									<div class="main-card">
 										<div class="dashboard-card__active item">
